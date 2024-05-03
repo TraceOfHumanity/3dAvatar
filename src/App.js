@@ -1,8 +1,11 @@
-import { useSelector } from 'react-redux';
+import { Hero } from "components/Hero";
 
 function App() {
-  const { value } = useSelector((state) => state.firstSlice);
-  return <div className="App">{value}</div>;
+  return (
+    <div className="">
+      <Hero />
+    </div>
+  );
 }
 
 export default App;
