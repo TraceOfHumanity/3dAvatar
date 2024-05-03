@@ -26,13 +26,13 @@ const Avatar = () => {
         position={[1.5, -1.5, 0.5]}
         rotation={[0, -1, 0]}
       />
-      <Html position={[-3.7, 0.3, 0]}>
+      <Html position={[-1, 0, 0]}>
         <button
           onClick={() => {
             setActionIndex((actionIndex + 1) % names.length);
             setIsClicked(!isClicked);
           }}
-          className="whitespace-nowrap rounded-lg bg-emerald-600 p-2 text-lg font-medium"
+          className="whitespace-nowrap rounded-lg bg-emerald-600 p-2 min-w-24 text-lg font-medium"
         >
           {isClicked ? 'Stop' : 'Start'}
         </button>
